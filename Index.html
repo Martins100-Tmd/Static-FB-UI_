@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="output.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #stat1 {
+            min-height: 220px;
+            min-width: 130px;
+        }
+
+        #status {
+            overflow-x: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="flex sm:flex-row items-center p-2.5 bg-blue-600 justify-between flex-col">
+        <a href="#" class="font-pop font-semibold text-2xl text-white"><i style="font-size:40px"
+                class="fa">&#xf230;</i></a>
+        <div class="flex flex-row items-center">
+            <input type="search" id="inputsearch" placeholder="Search"
+                class="rounded-full py-1.5 sm:px-7 font-pop font-semibold px-4 w-3/4">
+            <div class="rounded-full w-14 h-14 relative bg-gray-100 ml-3">
+                <img src="B003.jpg" class="rounded-full w-full h-full object-contain">
+            </div>
+        </div>
+    </nav>
+    <section class="bg-gray-100 flex sm:flex-row flex-col items-start">
+        <div class="left md:w-1/4 m-5 rounded-2xl shadow-xl bg-white p-3 hidden md:flex flex-col">
+            <div class="flex-row items-center flex justify-between mb-4">
+                <h1 class="text-xl font-pop font-semibold text-gray-700">Events</h1>
+                <p class="text-base font-pop font-semibold text-blue-600">see all</p>
+            </div>
+            <div class="flex md:flex-row flex-col items-center sm:justify-between justify-center w-full">
+                <div class="flex flex-col items-center bg-white rounded-xl shadow-2xl pt-3 w-full">
+                    <h1 class="text-4xl font-semibold text-center text-gray-500 m-1">25</h1>
+                    <h1 class="text-xl font-pop font-semibold text-gray-600 md:hidden inline">Christmas Day</h1>
+                    <div class="flex flex-rowitems-center md:hidden">
+                        <i style="font-size:24px" class="fa">&#xf041;</i>
+                        <p class="font-semibold font-pop text-xs ml-1 text-gray-600">Maitama Park,Abuja</p>
+                    </div>
+                    <p class="text-xs text-blue-600 font-pop font-semibold text-left md:hidden inline">see more</p>
+                    <div class="bg-blue-500 p-2 font-pop text-xs w-full text-white rounded-b-xl text-center">
+                        December</div>
+                </div>
+                <div class="hidden flex-col items-start md:flex w-full ml-4">
+                    <h1 class="text-xl font-pop font-semibold text-gray-600">Christmas Day</h1>
+                    <div class="flex flex-rowitems-center">
+                        <i style="font-size:24px" class="fa">&#xf041;</i>
+                        <p class="font-semibold font-pop text-xs ml-1 text-gray-600">Maitama Park,Abuja</p>
+                    </div>
+                    <p class="text-xs text-blue-600 font-pop font-semibold text-left">see more</p>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col items-center sm:justify-between justify-center w-full mt-4">
+                <div class="flex flex-col items-center bg-white rounded-xl shadow-2xl pt-3 w-full">
+                    <h1 class="text-4xl font-semibold text-center text-gray-500 m-1">26</h1>
+                    <h1 class="text-xl font-pop font-semibold text-gray-600 md:hidden inline">Boxing Day</h1>
+                    <div class="flex flex-rowitems-center md:hidden">
+                        <i style="font-size:24px" class="fa">&#xf041;</i>
+                        <p class="font-semibold font-pop text-xs ml-1 text-gray-600">Maitama Park,Abuja</p>
+                    </div>
+                    <p class="text-xs text-blue-600 font-pop font-semibold text-left md:hidden inline">see more</p>
+                    <div class="bg-blue-500 p-2 font-pop text-xs w-full text-white rounded-b-xl text-center">
+                        December</div>
+                </div>
+                <div class="hidden flex-col items-start md:flex w-full ml-4">
+                    <h1 class="text-xl font-pop font-semibold text-gray-600">Boxing Day</h1>
+                    <div class="flex flex-rowitems-center">
+                        <i style="font-size:24px" class="fa">&#xf041;</i>
+                        <p class="font-semibold font-pop text-xs ml-1 text-gray-600">Maitama Park,Abuja</p>
+                    </div>
+                    <p class="text-xs text-blue-600 font-pop font-semibold text-left">see more</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center w-full">
+                <h1 class="text-xl font-pop font-semibold text-gray-700 text-left mt-4">Restaurant Near You</h1>
+                <img src="choco.jpg" class="w-full rounded-lg h-42 object-contain">
+            </div>
+            <div class="flex-row items-center flex justify-between mt-3">
+                <h1 class="text-xl font-pop font-semibold text-gray-700">Messages</h1>
+                <p class="text-base font-pop font-semibold text-blue-600">Chats</p>
+            </div>
+            <div class="flex flex-col items-start">
+                <div class="flex md:flex-row items-center flex-col justify-center">
+                    <div class="rounded-full w-14 h-14 relative bg-gray-100 mr-5">
+                        <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-pop font-semibold text-gray-600">Gift Maraji</p>
+                </div>
+                <div class="flex md:flex-row items-center my-3 flex-col justify-center">
+                    <div class="rounded-full w-14 h-14 relative bg-gray-100 mr-5">
+                        <img src="C.jpg" class="rounded-full w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-pop font-semibold text-gray-600">Alexander Udinos</p>
+                </div>
+                <div class="flex md:flex-row items-center flex-col justify-center">
+                    <div class="rounded-full w-14 h-14 relative bg-gray-100 mr-5">
+                        <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                    </div>
+                    <p class="text-lg font-pop font-semibold text-gray-600">Gift Maraji</p>
+                </div>
+            </div>
+        </div>
+        <main class="flex flex-col items-center sm:w-2/3 my-5 w-full">
+            <div class="rounded-3xl shadow-xl p-7 w-full bg-white flex flex-col">
+                <div class="flex flex-row items-stretch justify-between">
+                    <input type="text" placeholder="What's on your mind, Ameer?"
+                        class="font-pop font-medium text-lg text-gray-500 outline-none border-b border-black sm:w-3/4 w-2/3">
+                    <div class="rounded-full w-14 h-14 relative bg-gray-100 ml-3">
+                        <img src="B003.jpg" class="rounded-full w-full h-full object-contain border border-blue-300">
+                    </div>
+                </div>
+                <div class="flex flex-row items-center mt-3 sm:w-3/4 justify-between w-full">
+                    <div class="flex flex-row items-center">
+                        <i style="font-size:24px" class="fa text-red-500">&#xf03d;</i>
+                        <div class="sm:text-sm text-xs text-gray-600 ml-2 font-pop font-semibold">Live</div>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <i style="font-size:24px" class="fa text-green-500">&#xf030;</i>
+                        <div class="sm:text-sm text-xs text-gray-600 ml-2 font-pop font-semibold">Photos/Video</div>
+                    </div>
+                    <div class="flex flex-row items-center"></div>
+                    <i style="font-size:24px" class="fa text-yellow-400">&#xf118;</i>
+                    <div class="sm:text-sm text-xs text-gray-600 ml-2 font-pop font-semibold">Activity
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between items-center mt-5 w-full" id="status">
+                <div class="rounded-2xl w-1/2 shadow bg-bg1 bg-center bg-no-repeat bg-cover relative" id="stat1">
+                    <img src="B003.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        Mageret</p>
+                </div>
+                <div class="rounded-2xl w-1/2 shadow bg-bg2 bg-center bg-no-repeat bg-cover relative ml-4 sm:hidden inline"
+                    id="stat1">
+                    <img src="B.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        Argent</p>
+                </div>
+                <div class="rounded-2xl w-1/2 shadow bg-bg3 bg-center bg-no-repeat bg-cover relative mx-4" id="stat1">
+                    <img src="C.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        James</p>
+                </div>
+                <div class="rounded-2xl w-1/2 shadow bg-bg2 bg-center bg-no-repeat bg-cover relative" id="stat1">
+                    <img src="B.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        James</p>
+                </div>
+                <div class="rounded-2xl w-1/2 shadow bg-bg2 bg-center bg-no-repeat bg-cover relative ml-4" id="stat1">
+                    <img src="B.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        Jumoke</p>
+                </div>
+                <div class="rounded-2xl w-1/2 shadow bg-bg1 bg-center bg-no-repeat bg-cover relative sm:hidden inline ml-4"
+                    id="stat1">
+                    <img src="B003.jpg"
+                        class="border-4 border-blue-700 h-11 w-11 rounded-full object-cover absolute top-5 left-3">
+                    <p class="text-base font-pop text-white absolute bottom-2 left-1/4 font-semibold text-center">
+                        Amara</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6 sm:hidden inline">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="B.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Ameer Khirslan</p>
+                            <small class="text-sm text-gray-600 font-pop">Dec 23 2021, 10:24pm</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">Happy Married life to my Buddy @Jo_Badmus
+                    & @tolu_ <span class="text-blue-600">
+                        #AdeTolu
+                    </span> <span class="text-blue-600">
+                        #2021
+                    </span> <span class="text-blue-600">
+                        #Ceremony
+                    </span></p>
+                <img src="Wed.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">135k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">768k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">10k</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl mt-5 w-full p-6 sm:hidden inline">
+                <div class="flex flex-row items-center justify-between">
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full w-16 h-16 relative bg-gray-100 mr-5">
+                            <img src="hike.jpg" class="rounded-full w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-xl font-pop font-semibold text-gray-600">Kris Argent</p>
+                            <small class="text-sm text-gray-600 font-pop">Jan 31 2018, 7:12am</small>
+                        </div>
+                    </div>
+                    <i style="font-size:26px" class="fa text-gray-600">&#xf141;</i>
+                </div>
+                <p class="text-base font-pop font-semibold text-gray-700">No better feeling than hiking with your
+                    bestie <span class="text-blue-600">
+                        #Hiking
+                    </span> <span class="text-blue-600">
+                        #Switzerland
+                    </span>
+                    <img src="hike.jpg" class="w-full rounded-2xl shadow-xl h-64 object-cover">
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center justify-between Sm:w-1/2 w-full mt-3">
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf087;</i>
+                            <div class="text-base font-pop text-gray-600">5k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf0e6;</i>
+                            <div class="text-base font-pop text-gray-600">7k</div>
+                        </div>
+                        <div class="flex flex-row items-center">
+                            <i style="font-size:24px" class="fa">&#xf064;</i>
+                            <div class="text-base font-pop text-gray-600">900</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="right  flex-col bg-white rounded-2xl shadow-xl p-5 md:w-1/5 m-5 sm:flex hidden sm:w-1/3">
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-3 text-blue-600">&#xf015;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Home</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf26c;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Watch</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf007;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Friends</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf0c0;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Groups</div>
+            </div>
+            <div class="flex flex-row items-center mt-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf07a;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Marketplace</div>
+            </div>
+            <hr>
+            <h1 class="text-xl font-pop font-semibold text-gray-700 my-2">Your Groups</h1>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-3 text-blue-600">&#xf015;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Gamer X society</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf26c;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Photoshop Afr.</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf007;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">Best Ankara style</div>
+            </div>
+            <div class="flex flex-row items-center my-5 hover:bg-gray-100 p-2">
+                <i style="font-size:30px" class="fa mr-4 text-blue-600">&#xf0c0;</i>
+                <div class="text-base font-pop font-semibold text-gray-600">CODM Nigeria</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
